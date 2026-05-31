@@ -1,31 +1,26 @@
-let i, j , k , l;
-
-
-for(i = 5 ; i>=1; i--){
-    let row = ''
-    for(k = 0; k<= 4-i; k++){
-        row += ' '
+for(let i = 5; i >=1; i--){
+    let str = "";
+    for(let k = 1; k <= 5 - i; k++){
+        str += " ";
     }
-    for(j=i; j>=1; j--){
-        row += '*'
+    for(let j = i; j >= 1; j--){
+        str += "*";
     }
-    for(l=i; l>=2;l--){
-        row += '*'
+    for(let l = 1; l <= i - 1; l++){
+        str += "*";
     }
-    console.log(row);
-    
+    console.log(str);
 }
-for(i = 2; i<=5; i++){
-    let row = ''
-    for(k=5; k> i; k--){
-        row += ' '
+for(let i = 1; i <= 5; i++){
+    let str = "";
+    for(let k = 1; k <= 5 - i; k++){
+        str += " ";
     }
-    for(j=1; j<=i; j++){
-        row += '*'
+    for(let j = 1; j <= i; j++){
+        str += "*";
     }
-    for(l=2; l<=i; l++){
-        row += '*'
+    for(let l = 2; l <= i; l++){
+        str += "*";
     }
-    console.log(row)
-
+    console.log(str);
 }
